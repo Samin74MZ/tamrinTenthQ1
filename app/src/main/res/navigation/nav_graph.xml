@@ -13,6 +13,7 @@
         <action
             android:id="@+id/action_registerFragment_to_showInfoFragment"
             app:destination="@id/showInfoFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/showInfoFragment"
@@ -22,5 +23,25 @@
         <action
             android:id="@+id/action_showInfoFragment_to_registerFragment"
             app:destination="@id/registerFragment" />
+        <argument
+            android:name="fullname"
+            app:argType="string"
+            android:defaultValue="f" />
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue="u" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            android:defaultValue="e" />
+        <argument
+            android:name="password"
+            app:argType="string"
+            android:defaultValue="ps" />
+        <argument
+            android:name="gender"
+            app:argType="string"
+            android:defaultValue="g" />
     </fragment>
 </navigation>
